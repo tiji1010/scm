@@ -1,0 +1,450 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* White Background */
+  color: #333333; /* Dark Gray Text */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container ul li a:hover{
+  color: #c1bcbc;
+}
+
+.container ul li{
+  margin-left: 10%;
+}
+
+.container h2 {
+  text-decoration: underline;
+}
+
+
+header#home {
+  padding: 0px;
+}
+
+
+nav {
+  background-color: #333333; /* Dark Gray Navigation Background */
+  color: #ffffff; /* White Text */
+  padding: 15px 0;
+  position: fixed;
+  display:block;
+  text-align:left;
+  width: 100%;
+  height: 100px;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 26px;
+}
+
+nav ul li a {
+  color: #ffffff; /* White Text */
+  text-decoration: none;
+}
+
+
+
+
+header, section {
+  background-color: #f9f9f9; /* Light Gray Sections Background */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.project {
+  background-color: #eeeeee; /* Lighter Gray Project Boxes Background */
+  color: #333333; /* Dark Gray Text */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+      justify-content: center;
+  }
+
+  header, section {
+      padding: 60px 0;
+  }
+}
+
+hr {
+  margin-top: 20px;
+}
+
+/* Increase size of contact form fields and button */
+section#contact form input,
+section#contact form textarea {
+    font-size: 18px;
+    padding: 15px;
+    margin-bottom: 15px; /* Increase margin for better spacing */
+}
+
+section#contact form button {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 15px; /* Increase margin for better spacing */
+}
+
+
+section#projects {
+  background-color: white;
+}
+
+div {
+  padding: 2px;
+}
+
+button {
+  background-color: rgb(47, 138, 47);
+  color:white;
+}
+
+#contact h1 {
+  text-decoration: underline;
+}
+
+img {
+  margin-top: 150px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  
+}
+#home {
+  background-color: white;
+}
+
+.column h1{
+  text-align: center;
+}
+
+h1#Taran{
+  margin-top: 37px;
+}
+
+#services{ padding: 30px 0;
+
+}
+.services-list{ 
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+/*----------css fo small screen-------*/
+nav .fas{display: block;}
+
+
+
+
+
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+  color: #008000;
+}
+.fab {
+  color: #000000;
+}
+/* footer styling */
+#footer {
+  background-color: #808080;
+  text-align: center;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+#contact {
+  padding-bottom: 4rem;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #444444;
+  padding: 20px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .info-box i.bx {
+  font-size: 24px;
+  color: #18d26e;
+  border-radius: 50%;
+  padding: 14px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+}
+
+.contact .info-box p {
+  padding: 0;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+}
+
+.contact .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+
+.contact .info-box .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.contact .info-box .social-links a:hover {
+  color: #18d26e;
+}
+
+.contact .php-email-form {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: rgba(255, 255, 255, 0.08);
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  background: rgba(255, 255, 255, 0.08);
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+.contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.contact .php-email-form input:-ms-input-placeholder, .contact .php-email-form textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #18d26e;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #15bb62;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+/* .topbtn{
+  font-size: 30px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+} */
+
+.upbtn {
+  background-color: #b7abab; /* Dark Gray Navigation Background */
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin: 2%;
+  padding: 5px;
+}
